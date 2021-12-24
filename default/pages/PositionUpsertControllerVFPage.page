@@ -1,0 +1,14 @@
+<apex:page controller="PositionUpsertController" tabStyle="Position__c" >
+    <apex:form >
+  <apex:pageBlock title="Positions">
+      <apex:pageBlockSection title="Position Details">
+          <apex:inputField value="{!pos.Name}"/>
+          <apex:inputField value="{!pos.Status__c}"/>
+          <apex:inputField value="{!pos.Type__c}"/>
+          </apex:pageBlockSection>
+      <apex:pageBlockButtons location="bottom" >
+          <apex:commandButton value="Save" action="{!save}" />
+</apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

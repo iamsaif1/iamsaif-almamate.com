@@ -1,0 +1,18 @@
+<apex:page standardController="Account" >
+    <apex:pageBlock title="Account Details">
+        <apex:pageBlockSection columns="1">
+        <apex:detail relatedList="False" />
+        </apex:pageBlockSection>
+        <apex:pageBlockTable value="{!Account.Opportunities}" var="opp">
+            <apex:column value="{!opp.Name}"/>
+            <apex:column value="{!opp.StageName}"/>
+            <apex:column value="{!opp.Type}"/>
+            <apex:column value="{!opp.CloseDate}"/>
+         <apex:column ><apex:outputLink value="{!URLFOR($Action.Opportunity.Edit,opp.id)}">Edit</apex:outputLink>
+         </apex:column>
+         <apex:column ><apex:outputLink value="{!URLFOR($Action.Opportunity.Delete,opp.id)}">Delete</apex:outputLink>
+         </apex:column>
+        </apex:pageBlockTable>
+    </apex:pageBlock>
+    
+</apex:page>

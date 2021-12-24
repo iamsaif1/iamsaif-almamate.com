@@ -1,0 +1,16 @@
+<apex:page standardController="account" recordSetVar="acc">
+    <apex:pageBlock title="List Of Accounts">
+    <apex:pageBlockSection title="Table View Of Account Details">
+        <apex:pageblocktable value="{!acc}" var="a">
+        <apex:column value="{!a.name}"/>
+            <apex:column value="{!a.phone}"/>
+            <apex:column value="{!a.billingpostalcode}"/>
+            <apex:column value="{!a.billingcity}"/>
+            <apex:column ><apex:outputLink value="{!URLFOR($Action.Account.Edit,a.id)}">Edit</apex:outputLink>
+                </apex:column>
+            <apex:column ><apex:outputLink value="{!URLFOR($Action.Account.View,a.id)}">View</apex:outputLink>
+            </apex:column>
+        </apex:pageblocktable>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

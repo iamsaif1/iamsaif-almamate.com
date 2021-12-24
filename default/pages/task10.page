@@ -1,0 +1,5 @@
+<apex:page >
+   <apex:pageblock title="Display Msg">
+    Welcome To Salesforce
+    </apex:pageblock>
+</apex:page>

@@ -1,0 +1,21 @@
+<apex:page standardController="Position__c" >
+  <apex:pageBlock title="Details Of Position Related Lists">
+      <apex:pageBlockSection columns="1">
+      <apex:detail relatedList="false"/>
+	  <!-- <apex:relatedList list="Job_Applications__r"/>
+          <apex:relatedList list="Candidates__r"/> -->
+      <apex:pageblocktable value="{!Position__c.Job_Applications__r}" var="ja">
+	<apex:column value="{!ja.Position__c}"></apex:column>
+          <apex:column value="{!ja.Job_Application_Id__c}"></apex:column>
+          <apex:column value="{!ja.Name}"></apex:column>
+          </apex:pageblocktable>
+          <apex:pageblocktable value="{!Position__c.Candidates__r}" var="can">
+              <apex:column value="{!can.Name}"/>
+              <apex:column headerValue="Age In Years" value="{!can.Age__c}"/>
+              <apex:column headerValue="Experience In Years" value="{!can.Experience__c}"/>
+              <apex:column value="{!can.Position__c}"/>
+              <apex:column value="{!can.Social_Security_Number__c}"/>
+          </apex:pageblocktable>
+              </apex:pageBlockSection>
+</apex:pageBlock>  
+ </apex:page>

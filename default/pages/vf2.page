@@ -1,0 +1,10 @@
+<apex:page controller="pageblocktable">
+    <apex:pageblock title="Contact Records">
+        <apex:form >
+        <apex:dataTable value="{!contlist}" var="ct">
+            <apex:column value="{!ct.firstname}"/>
+            <apex:column value="{!ct.lastname}"/>
+            </apex:dataTable>
+        </apex:form>
+    </apex:pageblock>
+</apex:page>

@@ -1,0 +1,19 @@
+<apex:page >
+<apex:pageBlock title="First PageBlock" tabStyle="X__c">
+    <h1>
+        This Is A Header
+    </h1>
+    <apex:pageBlockSection title="Section 1">
+        PageBlock Section 1 <br/>
+        User Name:{!$User.FirstName }  {!$User.LastName}
+        <p>
+            Today's Date Is {!Today()}
+        </p>
+    </apex:pageBlockSection>
+   <apex:pageBlockSection title="Section 2">
+      PageBlock Section 2      
+    </apex:pageBlockSection>
+    
+    
+    </apex:pageBlock>    
+</apex:page>

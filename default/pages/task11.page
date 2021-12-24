@@ -1,0 +1,10 @@
+<apex:page >
+    <apex:pageblock title="User Details">
+        <apex:pageBlockSection >
+            Username ={!$User.FirstName}<br/>
+            Phone Number ={!$User.MobilePhone}<br/>
+        Email ={!$User.Email}
+            </apex:pageBlockSection>
+    
+</apex:pageblock>
+</apex:page>
