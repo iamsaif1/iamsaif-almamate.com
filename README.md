@@ -1,2 +1,2 @@
 # iamsaif-almamate.com
-Super Or Repository
+Super Org Repository
