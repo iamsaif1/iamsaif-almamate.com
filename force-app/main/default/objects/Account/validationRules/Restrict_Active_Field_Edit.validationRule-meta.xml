@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Restrict_Active_Field_Edit</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND( ISCHANGED( Active__c ), $Profile.Name =&apos;System Administrator&apos; )</errorConditionFormula>
+    <errorDisplayField>Active__c</errorDisplayField>
+    <errorMessage>Cannot Edit This Field As System Admin</errorMessage>
+</ValidationRule>
