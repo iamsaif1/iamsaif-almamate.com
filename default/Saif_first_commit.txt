@@ -1,5 +1,0 @@
-My Name Is Saif Alam. 
-I'm committing firts time a txt file with some test data to it.
-github creds:Copado@8
-gmail :Windows_8
-Edit made directly from git

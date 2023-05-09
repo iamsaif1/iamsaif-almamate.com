@@ -1,4 +1,0 @@
-<apex:page >
-  <flow:interview name="Create_Account">
-</flow:interview>
-</apex:page>

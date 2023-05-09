@@ -1,8 +1,0 @@
-<apex:page standardController="account" >
-    <apex:pageBlock title="Accounts Detail Page">
-    <apex:pageblocksection title="List Of Accounts">
-        <apex:detail relatedList="true">
-        </apex:detail>
-        </apex:pageblocksection>
-    </apex:pageBlock>
-</apex:page>

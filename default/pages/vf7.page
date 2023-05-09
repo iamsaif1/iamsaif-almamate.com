@@ -1,5 +1,0 @@
-<apex:page standardcontroller="opportunity" extensions="opdate" >
-    <apex:pageBlock title="Opportunity Close Date">
-        <apex:outputPanel rendered="{!flag}">Close Date Is Near</apex:outputPanel>
-    </apex:pageBlock>
-</apex:page>
