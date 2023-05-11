@@ -5,10 +5,6 @@
         <members>Account</members>
         <name>CustomObject</name>
     </types>
-	<types>
-		<members>Account.Test1_Ant1__c</members>
-		<name>CustomField</name>
-	</types>
     <types>
         <members>Application__c-Application Layout</members>
         <members>Account-Account Layout</members>
