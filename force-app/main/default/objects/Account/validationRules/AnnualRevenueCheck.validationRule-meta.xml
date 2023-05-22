@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnnualRevenueCheck</fullName>
+    <active>false</active>
+    <description>Whenever Record Is Created/Edited And Owner Of Account IS Public,AnnualREvenue Filed SHouldn&apos;t Be Empty And Greater Than 0</description>
+    <errorConditionFormula>IF(  ISPICKVAL(Ownership, &apos;Public&apos;)  ,  ISNULL( AnnualRevenue ),false )</errorConditionFormula>
+    <errorDisplayField>AnnualRevenue</errorDisplayField>
+    <errorMessage>Annual Revenue Shouldnot Be Null And Greater Than 0</errorMessage>
+</ValidationRule>
